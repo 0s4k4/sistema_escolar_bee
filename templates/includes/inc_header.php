@@ -18,5 +18,19 @@
   <?php require_once INCLUDES.'inc_styles.php'; ?>
 </head>
 
-<body class="<?php echo isset($d->bg) && $d->bg === 'dark' ? 'bg-dark' : 'bg-light' ?>" style="<?php echo 'padding: '.(isset($d->padding) ? $d->padding : '200px 0px'); ?>">
+<body id="page-top" >
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+<?php require_once  INCLUDES.'inc_sidebar.php'; ?>
 <!-- ends inc_header.php -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+            <?php require_once INCLUDES.'inc_top_bar.php'; ?>
+
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
